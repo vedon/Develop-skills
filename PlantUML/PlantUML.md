@@ -46,6 +46,10 @@ Sublime Text 的集成使用的是 sublime_diagram_plugin 因为默认的包管�
 [英文版链接](http://plantuml.com/)
 
 
+![](./1.png)
+
+![](./2.png)
+
 ##Use terminal to open Sublime ?
 
 **用terminal 只需要简单的运行一个脚本：**
@@ -53,6 +57,21 @@ Sublime Text 的集成使用的是 sublime_diagram_plugin 因为默认的包管�
 ####./TerminalCmdForSublime.sh  /Applications/Sublime\ Text.app 
 
 [下载脚本文件](https://github.com/vedon/Develop-skills/blob/master/PlantUML/TerminalCmdForSublime.sh.sh)
+
+
+```
+#保存Sublime 的执行文件位置
+sumlineApplicationPath=$1/Contents/SharedSupport/bin/subl
+
+echo subl file path : $sumlineApplicationPath
+
+#在usr/local/bin创建Sublime 符号链接 （/usr/local 是本地系统管理员用来自由添加程序的目录）
+ln -s "$sumlineApplicationPath"  /usr/local/bin/sublime
+
+#刷新配置
+source ~/.bash_profile
+
+```
 
 
 然后确定当前环境变量的路径是否有/usr/local/bin 
@@ -64,6 +83,17 @@ echo $path
 /usr/local/bin /usr/bin /bin /usr/sbin /sbin
 
 ```
+
+没有的话，可以参照[这里](https://gist.github.com/artero/1236170)的配置。这样就可以在terminal 里面通过sublime 命令来打开sublime 了。同理，其他软件也是可以这样吗？
+
+```
+通过以下命令就可以在terminal 打开MacDown了！😄
+
+ln -s /Applications/MacDown.app/Contents/SharedSupport/bin/macdown /usr/local/bin/macdown
+```
+
+
+
 
 
 
