@@ -52,7 +52,7 @@ Sublime Text 的集成使用的是 sublime_diagram_plugin 因为默认的包管�
 
 ####./TerminalCmdForSublime.sh  /Applications/Sublime\ Text.app 
 
-[下载脚本文件](fd)
+[下载脚本文件](https://github.com/vedon/Develop-skills/blob/master/PlantUML/TerminalCmdForSublime.sh.sh)
 
 
 然后确定当前环境变量的路径是否有/usr/local/bin 
