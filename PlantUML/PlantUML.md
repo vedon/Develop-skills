@@ -16,7 +16,7 @@
 
 2 ）Graphviz 通过 brew install graphviz 命令安装。
 
-3 ）Sublime 就不说了。
+3 ）Sublime 就不说了，另外装完sublime记得安装package control插件。
 
 
 ###Sublime Text 配置
